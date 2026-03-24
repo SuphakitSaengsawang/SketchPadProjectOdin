@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+}
+
+main {
+    padding: 50px;
+    min-height: 250px;
+    background-color: crimson;
+}
+
+.grid-wrapper {
+    min-height: 960px;
+    min-width: 960px;
+    background-color: aliceblue;
+}
+.grid-contianer{
+    min-height: 960px;
+    min-width: 960px;
+    outline: 5px solid black;
+}
