@@ -16,7 +16,7 @@ main {
     padding: 50px;
     min-height: 250px;
     background-color: crimson;
-     display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -27,8 +27,19 @@ main {
     width: 960px;
     background-color: aliceblue;
 }
-.grid-contianer{
+
+#grid-container {
     height: 960px;
     width: 960px;
-    outline: 5px solid black;
+    display: grid;
+    grid-gap: 0.2em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    padding: 0.2em;
+    border: 1px solid #ddd;
+    font-size: 0.5em;
+    text-align: center;
 }
