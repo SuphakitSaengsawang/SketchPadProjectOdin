@@ -1,3 +1,4 @@
+// creating square and Grid
 let gridSize = 16;
 function makeRows(gridSize) {
   const container = document.getElementById("grid-container");
@@ -14,6 +15,7 @@ function makeRows(gridSize) {
 
 makeRows(gridSize);
 
+// Box Sizing Manipulation
 let boxSize = 960 / gridSize;
 
 function squareSize(boxSize) {
@@ -33,3 +35,4 @@ function squareSize(boxSize) {
 }
 
 squareSize(boxSize);
+// End of creating square and Grid & Box Sizing Manipulation
