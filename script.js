@@ -6,7 +6,7 @@ function makeRows(gridSize) {
     cell = document.createElement("div");
     cell.innerText = (c + 1);
     cell.style.color = `white`;
-    cell.style.textAlign =`center`;
+    cell.style.textAlign = `center`;
     cell.style.backgroundColor = `brown`
     container.appendChild(cell).className = "grid-item";
   };
@@ -22,6 +22,13 @@ function squareSize(boxSize) {
   for (let i = 0; i < squares.length; i++) {
     squares[i].style.width = boxSize + "px";
     squares[i].style.height = boxSize + "px";
+  }
+
+  for (let i = 0; i < squares.length; i++) {
+    squares[i].addEventListener("mouseover", function () {
+      squares[i].style.backgroundColor = "white";
+      squares[i].style.color = "black";
+    });
   }
 }
 
