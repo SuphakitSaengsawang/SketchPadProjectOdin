@@ -23,23 +23,14 @@ main {
 }
 
 .grid-wrapper {
-    height: 960px;
-    width: 960px;
+    display: flex;
+    flex-wrap: wrap;
     background-color: aliceblue;
 }
 
 #grid-container {
     height: 960px;
     width: 960px;
-    display: grid;
-    grid-gap: 0.2em;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-}
-
-.grid-item {
-    padding: 0.2em;
-    border: 1px solid #ddd;
-    font-size: 0.5em;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
